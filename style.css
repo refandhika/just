@@ -7,3 +7,8 @@ Description: Just wordpress theme created for idgameware. Using masonry for list
 Version: 0.0.1
 Text Domain: just
 */
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+}
