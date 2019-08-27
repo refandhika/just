@@ -1,2 +1,2 @@
-# just
-Just wordpress theme
+# Just
+Just wordpress theme. (It's currently empty :p)
