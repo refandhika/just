@@ -41,6 +41,7 @@ a:hover {
     height: 60px;
     background: #fff;
     z-index: 100;
+    transition: .5s ease;
 }
 
 #main-nav.invert {
@@ -49,7 +50,7 @@ a:hover {
 }
 
 #main-nav.invert a {
-    color: #aaa;
+    color: #ddd;
 }
 
 #main-nav.invert a:hover {
@@ -81,6 +82,7 @@ a:hover {
 #main-content {
     padding-top: 60px;
     text-align: center;
+    min-height: 100vh;
 }
 
 #main-content .content-wrap {
@@ -310,6 +312,10 @@ footer>div {
     padding: 2px;
 }
 
+.entry-sidebar {
+    margin-bottom: 10px;
+}
+
 /** Tags **/
 .entry-tags {
     font-size: 14px;
@@ -487,5 +493,67 @@ input[type=submit]:hover {
 /** Serach **/
 .search-form .screen-reader-text {
     display: none;
+}
+
+.search-desc {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.search-desc span {
+    border: 1px solid #222;
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+}
+
+/** Category **/
+#main-content .category-detail {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.category-desc {
+    color: #888;
+}
+
+/** Page Footer **/
+footer.page-footer {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer.page-footer a {
+    color: #ccc;
+}
+
+footer.page-footer a:hover {
+    color: #fff;
+}
+
+.footer-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-flex {
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.footer-flex ul {
+    list-style-type: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.footer-flex ul li {
+    margin-left: 15px;
 }
 

@@ -59,6 +59,15 @@
 	    });
 	}).resize();
 
+	/** Header changer **/
+	$(window).on('scroll', function(){
+	    if($(window).scrollTop() > 50){
+		$('.nav-top').addClass('invert');
+	    } else {
+		$('.nav-top').removeClass('invert');
+	    }
+	});
+	    
     });
 
     function loadArticle(pageCount, $grid){

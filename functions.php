@@ -24,6 +24,8 @@ if( !function_exists('just_setup') ){
 		'after_title' => '</div>'
 	));
 
+	register_widget('just_alsoread');
+
 	add_theme_support('html5', array(
 	    'search-form',
 	    'comment-form',
@@ -34,6 +36,8 @@ if( !function_exists('just_setup') ){
     }
 
 }
+
+require_once dirname( __FILE__ ) . '/widgets/alsoread.php';
 
 add_action( 'wp_enqueue_scripts', 'just_theme_scripts' );
 function just_theme_scripts(){

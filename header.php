@@ -16,7 +16,7 @@
 
 	<nav id="main-nav" class="nav-top">
 	    <div class="nav-top-wrap">
-	    <div class="nav-brand"><a href="<?= site_url(); ?>"><?= bloginfo('name'); ?></div>
+	    <div class="nav-brand"><a href="<?= site_url(); ?>"><?= bloginfo('name'); ?></a></div>
 	        <ul class="nav-item-wrap">
 	        <?php $menus = wp_get_nav_menu_items('header-menu'); ?>
 	        <?php if(!empty($menus)){ ?>
