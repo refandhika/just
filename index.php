@@ -1,9 +1,17 @@
 <?php
+global $wp_query;
 
 get_header(); ?>
 
-<body>
-</body>
+<main id="main-content" class="content-container">
+    <div id="mason-grid" class="content-wrap" data-max-page="<?= $wp_query->max_num_pages; ?>">
+	<div class="grid-sizer"></div>
+
+	<?php get_template_part('loop'); ?>
+
+    </div>
+    <div id="eotl">End of the Line</div>
+</main>
 
 <?php 
 
