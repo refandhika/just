@@ -544,6 +544,7 @@ footer>div {
     width: 100%;
     font-size: 14px;
     line-height: 20px;
+    border: 1px solid #eaeaea;
 }
 
 p.logged-in-as>* {
@@ -650,6 +651,7 @@ footer.page-footer a:hover {
     border-bottom: 1px solid #222;
     font-size: 16px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .entry-sidebar .alsoread-item {
@@ -705,6 +707,19 @@ footer.page-footer a:hover {
         width: calc(49% - 5px);
     }
 
+    .article-wrap,
+    #sidebar {
+	width: calc(99% - 5px);
+    }
+
+    .single #content {
+	border-bottom: 1px dashed #eaeaea;
+    }
+
+    .single #sidebar {
+	margin-top: 10px;
+    }
+
 }
 
 /** Under 600px **/
@@ -712,6 +727,15 @@ footer.page-footer a:hover {
     .gird-sizer,
     article.entry-box {
 	width: calc(99% - 5px);
+    }
+
+    .footer-flex {
+	display: block;
+	text-align: center;
+    }
+
+    .footer-flex>* {
+	padding: 5px 0;
     }
 
 }

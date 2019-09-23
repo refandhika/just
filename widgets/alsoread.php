@@ -18,7 +18,6 @@ class just_alsoread extends WP_Widget {
 	    $widgy .= $args['before_title'] . $title . $args['after_title'];
 	}
 
-	print_r($instance['item_count']);
 	$post_args = array(
 	    'post_type' => 'post',
 	    'orderby' => 'rand',
