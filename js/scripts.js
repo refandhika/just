@@ -67,7 +67,27 @@
 		$('.nav-top').removeClass('invert');
 	    }
 	});
-	    
+
+	/** Small nav toggler **/
+	$('#sm-toggle').click(function(){
+	    if($(this).hasClass('closed')){
+	    	$('.nav-side-wrap').css('width', '250px');
+		$('.nav-brand').css('opacity', '1.0')
+		    .animate({opacity: 0}, 400, function(){
+			$(this).css('visibility', 'hidden');
+		    });
+	    	$(this).css('marginRight', '250px');
+	    	$(this).removeClass('closed').addClass('open');
+	    } else {
+		$('.nav-side-wrap').css('width','0px');
+		$('.nav-brand').css('opacity', '0')
+		    .animate({opacity: 1.0}, 400, function(){
+			$(this).css('visibility', 'visible');
+		    });
+	    	$(this).css('marginRight', '0px');
+	    	$(this).removeClass('open').addClass('closed');
+	    }
+	});
     });
 
     function loadArticle(pageCount, $grid){

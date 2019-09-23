@@ -17,7 +17,7 @@
 	<nav id="main-nav" class="nav-top">
 	    <div class="nav-top-wrap">
 	    <div class="nav-brand"><a href="<?= site_url(); ?>"><?= bloginfo('name'); ?></a></div>
-	        <ul class="nav-item-wrap">
+		<ul class="nav-item-wrap">
 	        <?php $menus = wp_get_nav_menu_items('header-menu'); ?>
 	        <?php if(!empty($menus)){ ?>
 	    	    <?php foreach($menus as $menu){ ?>
@@ -27,4 +27,25 @@
 	        </ul>
 	    </div>
        </nav>
+
+	<nav id="main-nav-small" class="nav-top">
+	    <div class="nav-top-wrap">
+		<div class="nav-top-inside">
+		    <div class="nav-brand"><a href="<?= site_url(); ?>"><?= bloginfo('name'); ?></a></div>
+		    <div id="sm-toggle" class="nav-toggle closed"></div>
+		</div>
+	    </div>
+	    <div class="nav-side-wrap">
+		<div class="nav-side-title">Directory</div>
+		<ul class="nav-item-wrap">
+	        <?php $menus = wp_get_nav_menu_items('header-menu'); ?>
+	        <?php if(!empty($menus)){ ?>
+	    	    <?php foreach($menus as $menu){ ?>
+		    <li class="nav-item"><a href="<?= $menu->url; ?>"><?= $menu->title; ?></a></li>
+	    	    <?php } ?>
+	        <?php } ?>
+	        </ul>
+	    </div>
+       </nav>
+
 
